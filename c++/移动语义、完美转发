@@ -12,6 +12,17 @@
   完美是指不仅能准确地转发参数的值，还能保证转发的参数的左右值属性不变
   借用万能引用，通过引用的方式接受左右属性的值
     void func(int &n){
-      count << "rvalue=" << n << endl;
+      count << "lvalue=" << n << endl;
     }
-    void func()
+    void func(int &&n){
+      cout << "rvalue=" << n << endl;
+    }
+
+    template<typename T>
+    void revoke(T &&t){
+      func(forward<T>(t)){
+    }
+  引用折叠规则
+    参数为左值或左值引用，T&&将转化为int&    revoke(static_cast<int &> n);  int & && t-->int & t
+    参数为右值或右值引用，T&&将转化为int&&   revoke(static_cast<int &&> m);  int && && t-->int && t
+      revoke(n) int && t-->int & t变为左值引用            只有这种情况右值和右值引用传进来是----↑
