@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\learn\\c\u002B\u002Bprogramming\\Projects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D4702A2-19BB-4BD1-9492-476F5D816A83}|Projects.vcxproj|D:\\Projects\\learn\\c\u002B\u002Bprogramming\\Projects\\Projects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7D4702A2-19BB-4BD1-9492-476F5D816A83}|Projects.vcxproj|solutionrelative:Projects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Projects.cpp",
+              "DocumentMoniker": "D:\\Projects\\learn\\c\u002B\u002Bprogramming\\Projects\\Projects.cpp",
+              "RelativeDocumentMoniker": "Projects.cpp",
+              "ToolTip": "D:\\Projects\\learn\\c\u002B\u002Bprogramming\\Projects\\Projects.cpp",
+              "RelativeToolTip": "Projects.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-26T11:28:36.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
