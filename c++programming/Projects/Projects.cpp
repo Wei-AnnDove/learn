@@ -1,16 +1,16 @@
 ﻿#include <iostream>
 #include "H/test.h"
+#include "H/008a_&a.h"
 
 using namespace std;
 
 int main()
 {
     cout << "Beginning..." << endl;
-    tt();
+    Begin();
 
-    int a[5] = { 1,2,3,4,5 };
-    int* ptr = (int*)(a + 1);
-    cout << *(a + 1) << " " << *(ptr - 1) << endl;
+    _008_arrayAddress();
+
 }
 
 
