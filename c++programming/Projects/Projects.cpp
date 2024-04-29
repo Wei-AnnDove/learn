@@ -10,7 +10,8 @@ int main()
     Begin();
 
     _008_arrayAddress();
-    int aa = 1;
+
+    system("pause");
 
 }
 
