@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7d4702a2-19bb-4bd1-9492-476f5d816a83}</ProjectGuid>
+    <ProjectGuid>{95831e2f-6d42-4efc-b5ec-340c928b9327}</ProjectGuid>
     <RootNamespace>Projects</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="H\008a_&amp;a.cpp" />
+    <ClCompile Include="H\016Private_Virtual.cpp" />
     <ClCompile Include="H\test.cpp" />
-    <ClCompile Include="Projects.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="H\test.h" />
     <ClInclude Include="H\008a_&amp;a.h" />
+    <ClInclude Include="H\016Private_Virtual.h" />
+    <ClInclude Include="H\test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

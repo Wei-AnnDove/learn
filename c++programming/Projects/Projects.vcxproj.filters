@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Projects.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="H\test.cpp">
+    <ClCompile Include="H\016Private_Virtual.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="H\008a_&amp;a.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="H\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="H\008a_&amp;a.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="H\test.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="H\008a_&amp;a.h">
+    <ClInclude Include="H\016Private_Virtual.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
