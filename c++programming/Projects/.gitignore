@@ -2,3 +2,6 @@
 /Projects
 /x64
 Debug
+Projects.vcxproj
+Projects.vcxproj.filters
+Projects.vcxproj.user
