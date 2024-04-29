@@ -2,6 +2,6 @@
 #include "test.h"
 
 using namespace std;
-void tt() {
+void Begin() {
 	cout << "Test" << endl;
 }
