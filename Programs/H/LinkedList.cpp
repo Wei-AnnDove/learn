@@ -74,6 +74,19 @@ LinkedList::LinkedList(const LinkedList& other) :head(nullptr) {
 	}
 }
 
+void LinkedList::reverse_recursion() {
+	head = reverseRecursive(head, nullptr);
+}
+
+Node* LinkedList::reverseRecursive(Node* current, Node* prev) {
+	if (current == nullptr) {
+		return prev;
+	}
+	Node* next = current->next;
+	current->next = prev;
+	return reverseRecursive(next, current);
+}
+
 
 
 
@@ -96,5 +109,9 @@ void _020_reverse() {
 	cout << "reverse_loop: ";
 	list.print();
 	//list1.print();//Éî¸´ÖÆ
+
+	list.reverse_recursion();
+	cout << "reverse_recursion: ";
+	list.print();
 
 }
