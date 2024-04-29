@@ -20,6 +20,11 @@ public:
 	void print();
 	~LinkedList();
 	LinkedList(const LinkedList& other);
+
+	void reverse_recursion();
+
+private:
+	Node* reverseRecursive(Node* current, Node* prev);
 };
 
 void _020_reverse();
