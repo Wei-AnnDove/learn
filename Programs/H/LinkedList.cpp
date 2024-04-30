@@ -6,12 +6,12 @@ using namespace std;
 LinkedList::LinkedList():head(nullptr){}
 
 void LinkedList::append(int value) {
-	Node* newNode = new Node(value);
+	ListNode* newNode = new ListNode(value);
 	if (head == nullptr) {
 		head = newNode;
 	}
 	else {
-		Node* current = head;
+		ListNode* current = head;
 		while (current->next!=nullptr)
 		{
 			current = current->next;
@@ -24,9 +24,9 @@ void LinkedList::reverse_loop() {
 	if (nullptr == head || nullptr == head->next) {
 		return;
 	}
-	Node* prev = nullptr;
-	Node* current = head;
-	Node* next = nullptr;
+	ListNode* prev = nullptr;
+	ListNode* current = head;
+	ListNode* next = nullptr;
 	while (current!=nullptr)
 	{
 		next = current->next;//寻找当前节点下个节点
@@ -38,7 +38,7 @@ void LinkedList::reverse_loop() {
 }
 
 void LinkedList::print() {
-	Node* current = head;
+	ListNode* current = head;
 	while (current!=nullptr)
 	{
 		cout << current->data << " ";
@@ -48,8 +48,8 @@ void LinkedList::print() {
 }
 
 LinkedList::~LinkedList() {
-	Node* current = head;
-	Node* next;
+	ListNode* current = head;
+	ListNode* next;
 	while (current!=nullptr)
 	{
 		next = current->next;
@@ -62,12 +62,12 @@ LinkedList::~LinkedList() {
 LinkedList::LinkedList(const LinkedList& other) :head(nullptr) {
 	// 深复制链表
 	if (other.head != nullptr) {
-		Node* currentOther = other.head;
-		Node* currentNew = new Node(currentOther->data);
+		ListNode* currentOther = other.head;
+		ListNode* currentNew = new ListNode(currentOther->data);
 		head = currentNew;
 		currentOther = currentOther->next;
 		while (currentOther != nullptr) {
-			currentNew->next = new Node(currentOther->data);
+			currentNew->next = new ListNode(currentOther->data);
 			currentNew = currentNew->next;
 			currentOther = currentOther->next;
 		}
@@ -78,11 +78,11 @@ void LinkedList::reverse_recursion() {
 	head = reverseRecursive(head, nullptr);
 }
 
-Node* LinkedList::reverseRecursive(Node* current, Node* prev) {
+ListNode* LinkedList::reverseRecursive(ListNode* current, ListNode* prev) {
 	if (current == nullptr) {
 		return prev;
 	}
-	Node* next = current->next;
+	ListNode* next = current->next;
 	current->next = prev;
 	return reverseRecursive(next, current);
 }
