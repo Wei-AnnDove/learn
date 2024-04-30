@@ -4,6 +4,7 @@
 #include "H/016Private_Virtual.h"
 #include "H/LinkedList.h"
 #include "H/022Stack_To_Queue.h"
+#include "H/Sort_.h"
 
 using namespace std;
 
@@ -16,7 +17,8 @@ int main()
     //_008_arrayAddress();
     //_016_Virtual_Function();
     //_020_reverse();
-    _022_Stack_To_Queue();
+    //_022_Stack_To_Queue();
+    _Sort_Test();
 
     system("pause");
 
