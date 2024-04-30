@@ -91,7 +91,7 @@ ListNode* LinkedList::reverseRecursive(ListNode* current, ListNode* prev) {
 
 
 void _020_reverse() {
-	cout << "1" << endl;
+	//cout << "1" << endl;
 	LinkedList list;
 	list.append(1);
 	list.append(2);
