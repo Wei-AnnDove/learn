@@ -2,16 +2,16 @@
 #ifndef LINkEDLIST_H
 #define LINkEDLIST_H
 
-struct Node
+struct ListNode
 {
 	int data;
-	Node* next;
-	Node(int val):data(val),next(nullptr){}
+	ListNode* next;
+	ListNode(int val):data(val),next(nullptr){}
 };
 
 class LinkedList {
 private:
-	Node* head;
+	ListNode* head;
 
 public:
 	LinkedList();
@@ -24,7 +24,7 @@ public:
 	void reverse_recursion();
 
 private:
-	Node* reverseRecursive(Node* current, Node* prev);
+	ListNode* reverseRecursive(ListNode* current, ListNode* prev);
 };
 
 void _020_reverse();
